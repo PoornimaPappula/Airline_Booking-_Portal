@@ -37,13 +37,15 @@ public class PaymentConfirmationServlet extends HttpServlet {
 			 }
 			 else 
 			 {
-				 BookingClass.payment_success = "TRUE";
+				    BookingClass.payment_success = "TRUE";
+				    
 					BookingClass.booked_seats = SearchClass.no_of_passengers;
 					flight.avaialable_seats = SearchClass.totalseats - BookingClass.booked_seats;
 					PreparedStatement ps=con.prepareStatement("update flight set total_seats =? where airline_id=?");
 					ps.setInt(1,flight.avaialable_seats);
 					ps.setInt(2,flight.flight_booking_id);
-					ps.executeUpdate();					
+					ps.executeUpdate();			
+					
 					pw.println("<h1>"+"Ticket Booked Succesfully......!"+"</h1>"+"<br/><br/>"); 
 					 pw.println("<h3>"+"Payment of Rs." + BookingClass.totalamount + "\thas been succesfully done using\t"+BookingClass.payment_mode +"</h3>"+"<br/><br/>");
 					 pw.println(SearchClass.no_of_passengers + "  Ticket/Tickets has booked succesfully between  " + SearchClass.usource + "  and  " + SearchClass.udestination

@@ -30,12 +30,14 @@ public class SearchFlightServlet extends HttpServlet {
 			try {
 			RequestDispatcher rd = request.getRequestDispatcher("ViewFlights.html");
 			rd.include(request, response);	
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/flyaway","root","Poori");
 			PreparedStatement ps=con.prepareStatement("Select * from flight where from_location=? and to_location=?");
 			ps.setString(1,request.getParameter("source"));
 			ps.setString(2, request.getParameter("destination"));
 			ResultSet rs = ps.executeQuery();
+			
 			BookingClass.assign_once= "false";
 			if(rs.next()) 
 			{
