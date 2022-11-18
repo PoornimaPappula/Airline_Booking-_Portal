@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Results</title>
+<style>
+body {
+  background-image: url('flight4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+div {
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+#rd1 {
+  border: 4px ;
+  padding: 5px;
+  border-radius: 5px;
+  text-align-last:center; 
+  width: 250px;
+}
+table, th, td {
+  border:1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* select { text-indent: 15px; width: 230px; } */
+</style> 
+</head> 
+
+<body style="text-align:center; color:White; font-family:verdana">
+	<h3>Welcome to Admin Page</h3><br/>
+	
+<form action="AddFlight.html">
+		<input style=" margin-left:12px;" type="submit" value="Add Flight" placeholder="Add Flight" id="rd1">	<br/><br/>
+</form>	
+<form action="ListofFlightsServlet">
+		<input style=" margin-left:12px;" type="submit" value="List of Flights" placeholder="List of Flights" id="rd1">	<br/><br/>
+</form>
+
+<form action="AirlinesMasterListServlet">
+		<input style="margin-left:12px;" type="submit" value="Master List of Airlines" placeholder="Master List of Airlines" id="rd1">	<br/><br/>
+</form>
+<form action="PlacesListServlet">
+		<input style="margin-left:12px;" type="submit" value="Master List of Source and Destination" placeholder="Master List of Source and Destination" id="rd1">	<br/><br/>
+</form>
+<form action="ChangePassword.html">
+		<input style="margin-left:12px;" type="submit" value="Change Password" placeholder="Change Password" id="rd1">	<br/><br/>
+</form>
+<form action="SearchFlight.html">
+		<input style="margin-left:12px;" type="submit" value="Home" placeholder="Home" id="rd1">	<br/>
+</form>
+</body>
+
+</html>

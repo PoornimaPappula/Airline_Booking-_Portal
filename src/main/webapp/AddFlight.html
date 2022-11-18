@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Results</title>
+<style>
+body {
+  background-image: url('flight5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+div {
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+#rd1 {
+  border: 4px ;
+  padding: 5px;
+  border-radius: 5px;
+  text-align-last:center; 
+  width: 190px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+/* select { text-indent: 15px; width: 230px; } */
+</style> 
+</head> 
+
+<body style="text-align:center; color:White; font-family:verdana">
+	<form action="AddFlightServlet">
+		<div   style="margin-left:-148px">
+        <label>Flight ID:</label>  	
+		 <input type="text" id="rd1"  name="fid" placeholder="flight id"> <br/>
+		</div>
+		
+		<div   style="margin-left:-148px">
+        <label>Date:</label>  		
+		 <input type="date" id="rd1"  value="2022-12-01" name="fdate" placeholder="Date">
+	</div>
+
+		<div style="margin-left:-148px">
+        <label>Source:</label>
+		<select name="ffrom" style ="width:199px" id="rd1">
+		  <option value="Ahmedabad">Ahmedabad</option>
+		  <option value="Amritsar">Amritsar</option>
+		  <option value="Bengaluru">Bengaluru</option>
+		  <option value="Calicut">Calicut</option>
+		  <option value="Chennai">Chennai</option>
+		  <option value="Delhi">Delhi</option>
+		  <option value="Goa">Goa</option>
+		  <option value="Guwahati">Guwahati</option>
+		  <option value="Jaipur">Jaipur</option>
+		  <option selected="selected"  value="Hyderabad">Hyderabad</option>
+		  <option value="Kolkata">Kolkata</option>
+		  <option value="Kochi">Kochi</option>
+		  <option value="Mumbai">Mumbai</option>
+		  <option value="Nagpur ">Nagpur </option>
+		  <option value="Thiruvananthapuram ">Thiruvananthapuram </option>
+		  <option value="Srinagar">Srinagar</option>	
+		</select>  
+ 	</div>
+
+		<div   style="margin-left:-148px">
+        <label>Destination:</label>
+		<select name="fto" style ="width:199px" id="rd1">
+		  <option value="Ahmedabad">Ahmedabad</option>
+		  <option value="Amritsar">Amritsar</option>
+		  <option selected="selected" value="Bengaluru">Bengaluru</option>
+		  <option value="Calicut">Calicut</option>
+		  <option value="Chennai">Chennai</option>
+		  <option value="Delhi">Delhi</option>
+		  <option value="Goa">Goa</option>
+		  <option value="Guwahati">Guwahati</option>
+		  <option value="Jaipur">Jaipur</option>
+		  <option value="Hyderabad">Hyderabad</option>
+		  <option value="Kolkata">Kolkata</option>
+		  <option value="Kochi">Kochi</option>
+		  <option value="Mumbai">Mumbai</option>
+		  <option value="Nagpur ">Nagpur </option>
+		  <option value="Thiruvananthapuram ">Thiruvananthapuram </option>
+		  <option value="Srinagar">Srinagar</option>		  
+		  
+		</select>        
+	</div>
+	
+		<div   style="margin-left:-148px">
+        <label>Departure:</label>  	
+		 <input type="text" id="rd1"  name="fdtime" placeholder="dep time"> <br/>
+		</div>
+
+		<div   style="margin-left:-148px">
+        <label>Arrival:</label>  	
+		 <input type="text" id="rd1"  name="fatime" placeholder="arr time"> <br/>
+		</div>
+									
+		<div   style="margin-left:-148px">
+        <label>Price(Rs.):</label>  	
+		 <input type="text" id="rd1"  name="fprice" placeholder="price"> <br/>
+		</div>
+		
+		<div   style="margin-left:-148px">
+        <label>Total Seats:</label>  	
+		 <input type="text" id="rd1"  name="fseats" placeholder="seats"> <br/>
+		</div>
+
+		<div   style="margin-left:-148px">
+        <label>Airline Name:</label>  	
+		 <input type="text" id="rd1"  name="fname" placeholder="Airline"> <br/>
+		</div>		
+		<div>
+		<input style="float:left; margin-left:652px;" type="submit" value="Add Flight" placeholder="Add Flight" id="rd1">	
+		</div>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Results</title>
+<style>
+body {
+  background-image: url('flight4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+div {
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+#rd1 {
+  border: 4px ;
+  padding: 5px;
+  border-radius: 5px;
+  text-align-last:center; 
+  width: 190px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+/* select { text-indent: 15px; width: 230px; } */
+</style> 
+</head> 
+
+<body style="text-align:center; color:White; font-family:verdana">
+	<h3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Admin Login Page</h3><br/><br/>
+	<form action="AdminLoginServlet">
+	<div>
+        <label>UserName:</label> 		
+		<input type="text" name="uname" id="rd1"><br/><br/>
+	</div>
+	<div>
+        <label>UserPassword:</label> 		
+		<input type="password" name="upassword" id="rd1"><br/><br/>
+	</div>				
+	<div>
+		<input style="float:left; margin-left:728px;" type="submit" value="Login" placeholder="Login" id="rd1">	
+		</div>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Results</title>
+<style>
+body {
+  background-image: url('flight5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+div {
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+#rd1 {
+  border: 4px ;
+  padding: 5px;
+  border-radius: 5px;
+  text-align-last:center; 
+  width: 190px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+/* select { text-indent: 15px; width: 230px; } */
+</style> 
+</head> 
+
+<body style="text-align:center; color:White; font-family:verdana">
+	<form action="PaymentValidateServlet">
+	<p style="margin-left:-28px"> Please enter payment details </p><br/>
+		
+		<div  style="margin-left:-200px">
+        <label>UPI ID</label> 	
+		 <input type="text" id="rd1"  name="UPI" placeholder="UPI"> <br/>
+		</div>	<br/>
+		
+		<div>
+		<input style="float:left; margin-left:630px;" type="submit" value="Pay" placeholder="Pay" id="rd1">	
+		</div>
+	</form>
+</body>
+
+</html>
